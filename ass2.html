@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+            button{
+                width: 150px;
+                background: green;
+                color: white;
+                padding: 30px;
+                margin: 50px;
+                border-radius: 30px 15px;
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <button onclick="time()">TIME</button>
+        <h1>
+            Build a guess Nigeria age quiz using switch 
+        </h1>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="index.html">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="headstyle.html">next</a></li>
+              <li class="page-item"><a class="page-link" href="external.html">shop</a></li>
+              <li class="page-item"><a class="page-link" href="ass.html">contact us</a></li>
+              <li class="page-item"><a class="page-link" href="ass2.html">help</a></li>
+            </ul>
+        </nav>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+
+
+
+
+        <script>
+            let question1=prompt('what is nigeria age 64')
+            switch(+question1){
+                case 53:
+                    alert('no it is more than');
+                    break;
+                case 66:
+                    alert('a bit less than');
+                    break;
+                case 64:
+                    alert('correct');
+                    break;
+                default:
+                    alert('incorrect')
+            }
+        </script>
+        <script>
+            function time(){
+                let current =new Date().getHours()
+                console.log(current)
+                if(current>=24.00&&current<=5.59){
+                    alert('You should be asleep by now')
+                }
+                if(current>=6.00&&current<=11.59){
+                    alert('Good Morning')
+                }
+                if(current>=12.00&&current<=15.00){
+                    alert('Good Afternoon')
+                }
+                if(current>=15.00&&current<=21.59){
+                    alert('Good Evening')
+                }
+                if(current>=22.00&&current<=23.59){
+                    alert('Go and sleep')
+                }
+            }
+        </script>
+    </body>
+</html>
