@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+           button{
+            background: black;
+            color: white;
+            font-size: 30px;
+            margin-left: 50px;
+            padding: 3px 20px;
+            border-radius: 20px;
+           }
+           input{
+            background: black;
+            font-size: 30px;
+            color: white;
+            border-radius: 20px;
+            padding: 10px; 
+           }
+           .all{
+            padding: 50px;
+            background: green;
+           }
+           span{
+            color: white;
+            background: black;
+            border-radius: 10px;
+            font-size: 40px;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="all">
+            <input type="number" id="num1">
+            <span id="sign"></span>
+            <input type="number" id="num2">
+            <span id="ans"></span><br><br><br>
+            <button class="one" onclick="add()">+</button>
+            <button class="two" onclick="minus()">-</button>
+            <button class="thr" onclick="muti()">*</button>
+            <button class="fou" onclick="div()">/</button>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="index.html">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="headstyle.html">next</a></li>
+              <li class="page-item"><a class="page-link" href="external.html">shop</a></li>
+              <li class="page-item"><a class="page-link" href="ass.html">contact us</a></li>
+              <li class="page-item"><a class="page-link" href="ass2.html">help</a></li>
+              <li class="page-item"><a class="page-link" href="ass3.html">more information</a></li>
+            </ul>
+        </nav>
+        <script>
+            function add(){
+                let a=+(document.getElementById('num1').value);
+                let b=document.getElementById('sign');
+                let c=+(document.getElementById('num2').value);
+                let d=document.getElementById('ans');
+
+                let k=a+c;
+                d.innerHTML= "=" +k
+                b.innerHTML="+"
+                
+            }
+            function minus(){
+                let a=+(document.getElementById('num1').value);
+                let b=document.getElementById('sign');
+                let c=+(document.getElementById('num2').value);
+                let d=document.getElementById('ans');
+
+                let k=a-c;
+                d.innerHTML= "=" +k
+                b.innerHTML="-"
+                
+            }
+            function muti(){
+                let a=+(document.getElementById('num1').value);
+                let b=document.getElementById('sign');
+                let c=+(document.getElementById('num2').value);
+                let d=document.getElementById('ans');
+
+                let k=a*c;
+                d.innerHTML= "=" +k
+                b.innerHTML="*"
+                
+            }
+            function div(){
+                let a=+(document.getElementById('num1').value);
+                let b=document.getElementById('sign');
+                let c=+(document.getElementById('num2').value);
+                let d=document.getElementById('ans');
+
+                let k=a/c;
+                d.innerHTML= "=" +k
+                b.innerHTML="/"
+                
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    </body>
+</html>
